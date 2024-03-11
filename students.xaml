@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.students"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="students" Height="350" Width="800"
+        Background="LightGray" Closed="Window_Closed"> 
+    <Grid>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Top" Margin="0,10,0,0">
+            <TextBlock Text="Выбери предмет:" Margin="10" VerticalAlignment="Center" FontFamily="Georgia" FontSize="20" />
+            <ComboBox x:Name="SubjectComboBox" HorizontalAlignment="Left" Width="250" Margin="20" 
+            SelectionChanged="SubjectComboBox_SelectionChanged" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" VerticalAlignment="Top" Margin="0,100,0,0">
+            <TextBlock Text="Данные об учителе::" Margin="10" FontFamily="Georgia" FontSize="16"/>
+            <TextBox x:Name="TeacherInfoTextBox" HorizontalAlignment="Left" Width="774" Height="100" 
+            Margin="10" IsReadOnly="True" FontFamily="Georgia" FontSize="14" />
+        </StackPanel>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="-22,492,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
